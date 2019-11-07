@@ -9,7 +9,7 @@ ul {
 }
 
 .menu__search--btn {
-  background: url('../img/search.svg') no-repeat;
+  background: url('../../img/search.svg') no-repeat;
   height: 27px;
   width: 2%;
   border: 0;

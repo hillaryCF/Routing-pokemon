@@ -5,7 +5,6 @@ class Api extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			pokemon: [],
 			Loaded: false,
 		}
 	}
@@ -14,6 +13,7 @@ class Api extends Component {
 		fetch('https://api.pokemontcg.io/v1/cards')
 			.then(res => res.json())
 			.then(json => {
+				console.log(json)
 				this.setState({
 					Loaded: true,
 					items: json,
@@ -22,8 +22,8 @@ class Api extends Component {
 	}
 
 	render() {
-		var { Loaded, items } = this.state;
-		console.log(items)
+		const { Loaded, items } = this.state;
+	
 		if (!Loaded) {
 
 			return <div>loading...</div>;
@@ -32,7 +32,7 @@ class Api extends Component {
 			return (
 				<div>
 					{items.cards.map(e => (
-						<Img key={e.id} name={e.name} {...e}></Img>
+						<Img to={`/poke-info/${e.name}`} namecard={e.id} name={e.name} {...e} ></Img>
 					))}
 				</div>
 			)
