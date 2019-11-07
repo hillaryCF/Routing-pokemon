@@ -1,0 +1,15 @@
+.switch-off {
+  background: url('../../img/star-white.svg') no-repeat;
+  height: 30px;
+  width: 30px;
+  border:0;
+  margin-top: 20px;
+}
+
+.switch-on {
+  background: url('../../img/star-yellow.svg') no-repeat;
+  height: 30px;
+  width: 30px;
+  border:0;
+  margin-top: 20px;
+}

@@ -1,0 +1,31 @@
+.card {
+  cursor: pointer;
+}
+
+.container {
+  display: inline-block;
+  padding: 30px;
+  margin: 0 12px 12px;
+  background: #222048;
+  text-align: center;
+}
+
+.title {
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+li {
+  list-style: none;
+  display: inline;
+  margin-right: 20px;
+  font-size: 32px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+}
+
