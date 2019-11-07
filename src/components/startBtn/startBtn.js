@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './startBtn.css';
 
+
 class BtnStart extends Component {
 
   constructor(props) {

@@ -3,8 +3,8 @@ import Nav from '../navigation/nav';
 
 export default () => {
   return(
-    <div>
+    <React.Fragment>
       <Nav/>
-    </div>
+    </React.Fragment>
   )
 }
